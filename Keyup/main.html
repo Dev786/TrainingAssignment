@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <title>Event changes</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div id="display">
+        <fieldset>
+            <legend>Display Information</legend>
+
+            <table>
+                <tr>
+                    <th>NAME</th>
+                    <th>
+                        <p id="name"></p>
+                    </th>
+                </tr>
+                <tr>
+                    <th>EMAIL</th>
+                    <th>
+                        <p id="email"></p>
+                    </th>
+                </tr>
+                <tr>
+                    <th>GENDER</th>
+                    <th>
+                        <p id="gender"></p>
+                    </th>
+                </tr>
+                <tr>
+                    <th>CONTACT</th>
+                    <th>
+                        <p id="contact"></p>
+                    </th>
+                </tr>
+                <tr>
+                    <th>QUALIFICATION</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <th>
+                        <p id="qual"></p>
+                    </th>
+                </tr>
+                <tr>
+                    <th>ABOUT</th>
+                    <th>
+                        <p id="about"></p>
+                    </th>
+                </tr>
+            </table>
+
+        </fieldset>
+    </div>
+
+
+    <div id="form">
+        <fieldset>
+            <legend>Display Information</legend>
+
+            <table>
+                <tr>
+                    <th>NAME</th>
+                    <td>
+                        <input type="text" name="name" onkeyup="loadData(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <th>EMAIL</th>
+                    <td>
+                        <input type="email" name="email" onkeyup="loadData(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <th>GENDER</th>
+                    <td>
+                       MALE: <input type="radio" name="gender" value = "MALE" onclick="loadData(this)">
+                       FEMALE: <input type="radio" name="gender" value="FEMALE" onclick="loadData(this)">
+                       
+                    </td>
+                </tr>
+                <tr>
+                    <th>CONTACT</th>
+                    <td>
+                        <input type="number" name="contact" onkeyup="loadData(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <th>QUALIFICATION </th>
+                    <td>
+                        UG: <input type="checkbox" class="qual" onclick="loadCheck()" name="UnderGraduate"> G: <input type="checkbox"
+                            class="qual" onclick="loadCheck()" name="Graduate"> PG: <input type="checkbox" class="qual" onclick="loadCheck()"
+                            name="PostGraduate">
+                    </td>
+                </tr>
+                <tr>
+                    <th>ABOUT</th>
+                    <td>
+                        <textarea rows="10" cols="30" name="about" onkeyup="loadData(this)"></textarea>
+                    </td>
+                </tr>
+            </table>
+
+        </fieldset>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
